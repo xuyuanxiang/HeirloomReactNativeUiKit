@@ -11,8 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+import {Button} from './components/button/button'
+
 
 class HeirloomReactNativeUiKit extends Component {
+
+
+
   render() {
     return (
       <View style={styles.container}>
@@ -26,6 +31,7 @@ class HeirloomReactNativeUiKit extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Button onPress={()=>console.log(this)} style="primary">Button</Button>
       </View>
     );
   }
@@ -47,7 +53,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
-  },
+  }
 });
 
 AppRegistry.registerComponent('HeirloomReactNativeUiKit', () => HeirloomReactNativeUiKit);
