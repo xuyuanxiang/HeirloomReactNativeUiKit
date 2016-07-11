@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^15.1.0",
-    "react-native": "^0.27.1",
-    "react-native-navbar": "^1.5.0"
+    "react-native": "^0.27.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^12.1.0",
+    "babel-polyfill": "^6.9.1",
+    "jest-cli": "^12.1.1"
   }
 }
